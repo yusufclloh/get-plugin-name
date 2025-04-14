@@ -24,5 +24,5 @@ jQuery.each(plugins, function(index, plugin) {
 });
 
 // Log the entire list in one console log
-console.log(pluginList.map((plugin, index) => `- ${plugin}`).join('\n'));
+console.log(pluginList.map((plugin, index) => `-> ${plugin}`).join('\n'));
 ```
