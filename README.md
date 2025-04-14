@@ -1,6 +1,7 @@
 # get-plugin-name
 Copy this code to console in this URL 'wp-admin/update-core.php'
 
+```
 const plugins = jQuery('.plugins').find('.plugin-title');
 const pluginList = [];
 jQuery.each(plugins, function(index, plugin) {
@@ -24,3 +25,4 @@ jQuery.each(plugins, function(index, plugin) {
 
 // Log the entire list in one console log
 console.log(pluginList.map((plugin, index) => `- ${plugin}`).join('\n'));
+```
