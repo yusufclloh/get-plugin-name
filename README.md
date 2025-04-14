@@ -18,11 +18,11 @@ jQuery.each(plugins, function(index, plugin) {
         const newVersion = newVersionMatch[1];
 
         // Format the result
-        const formattedResult = `${pluginName} | ${currentVersion} > ${newVersion}`;
+        const formattedResult = `${pluginName} | ${currentVersion} -> ${newVersion}`;
         pluginList.push(formattedResult);
     }
 });
 
 // Log the entire list in one console log
-console.log(pluginList.map((plugin, index) => `-> ${plugin}`).join('\n'));
+console.log(pluginList.map((plugin, index) => `- ${plugin}`).join('\n'));
 ```
